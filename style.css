@@ -1,5 +1,6 @@
+/* Estilos generales */
 :root {
-  --gap: 20px;
+  --spacing: 20px;
 }
 
 * {
@@ -13,77 +14,68 @@ body {
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   margin: 0;
   padding: 0;
+  min-height: 90vh;
   background-color: #000000;
   color: #9ad79b;
-  width: 100%;
-  
 }
 
 header {
   position: fixed;
   top: 0;
   z-index: 1;
+  background-color: black;
   width: 100%;
   border-bottom-style: dotted;
-  padding: var(--gap);
-  background-color: black;
+  padding: var(--spacing);
 }
 
 main {
-  margin-top: 6%;
-  border-top-style: dotted;
-  border-bottom-style: dotted;
-  width: 100%;
-}
-
-.content {
-  padding: var(--gap);
-  border-bottom-style: dotted;
-  margin-bottom: 20px;
   position: relative;
-  max-width: 100%;
+  margin-top: 100px;
+  width: 100%;
+  border-bottom-style:dotted ;
+  height: 400px;
   
 }
+.content {
+  position: absolute;
+  width: 100%;
+  border-bottom-style: dotted;
+  border-top-style: dotted;
+  margin-left: 0;
+  padding: var(--spacing);
+}
 
-main li {
+ul > li {
   list-style-type: none;
 }
 
-.sidebar {
-  position: relative;
-  margin-left: 90%;
-  border-style: dotted;
-  padding: var(--gap);
+.sidebar{
+  position: absolute;
+  border: dotted;
+  padding: var(--spacing);
   width: max-content;
+  margin-top:160px;
+  right:0;
+  
+}
+
+.features{
+  justify-content: center;
+  text-align: center;
   margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-.features {
-  border-top-style: dotted;
   border-bottom-style: dotted;
-  margin-top: 12%;
-  position: relative;
-  padding: var(--gap);
+  height: 250px;
+  
+  
 }
 
-section .feature {
-  position: relative;
-  left: 50%;
-}
-
-footer {
-  width: 100%;
+footer{
   position: fixed;
-  border-top-style: dotted;
-  border-bottom-style: dotted;
-  padding: var(--gap);
-  left: 0;
+  width: 100%;
   bottom: 0;
-  background-color: black;
-}
-
-footer p {
-  position: relative;
-  margin-left: 50%;
+  text-align: center;
+  justify-content: center;
+  padding: 20px;
+  border-top-style:dotted ;
 }
